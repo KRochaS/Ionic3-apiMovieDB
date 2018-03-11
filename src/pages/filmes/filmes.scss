@@ -1,0 +1,19 @@
+page-filmes {
+
+    a:link { 
+        text-decoration:none; 
+    } 
+
+    img {
+        width: 50px;
+    }
+
+    .titulo-filme {
+        vertical-align:  !important;
+    }
+
+    ion-searchbar {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+}

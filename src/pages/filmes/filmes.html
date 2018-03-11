@@ -1,0 +1,34 @@
+
+<ion-header>
+
+	<ion-navbar>
+		<button ion-button menuToggle clear color="dark">
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>filmes</ion-title>
+	</ion-navbar>
+	
+</ion-header>
+
+
+<ion-content padding>
+	<ion-searchbar [(ngModel)]="query" (ionInput)="onInput($event)">
+	</ion-searchbar>
+	<ion-list>
+		<ion-list-header>
+			Filmes
+		</ion-list-header>
+
+		<span *ngIf="filmes"> 
+			<ion-item (click)="abrirDetalhes(filme)" *ngFor="let filme of filmes.tvfilme" [attr.no-lines]="null">
+				 <ion-icon item-right margin-right [name]="filme.icon"> </ion-icon>
+				<img item-left [attr.src]="filme.imagem">
+	
+				<span class="titulo-filme"> {{ filme.nome }} </span>
+	
+				<p> {{filme.data}} </p>
+			</ion-item>
+		</span>
+	</ion-list>
+
+</ion-content>

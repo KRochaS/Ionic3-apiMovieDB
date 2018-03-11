@@ -1,0 +1,87 @@
+page-home {
+
+    .genero-container {
+       
+    }
+
+    .genero {
+    //     text-align: center;
+       height: 120px;
+    //    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    color: #FFF;
+    font-size: 23px;
+
+    }
+    ion-card-header {
+        background-color: #009688 !important;
+       // background-image:  url('../../assets/imgs/fundos_generos/acao.jpg') !important;
+
+       &.amarelo {
+           background-color: yellow !important; 
+       }
+
+       &.azul {
+           background-color: blue !important;
+       }
+
+       &.verde {
+           background-color: green !important;
+       }
+
+       &.laranja {
+           background-color: orange !important;
+       }
+
+       &.marrom {
+           background-color: brown !important;
+       }
+
+       &.rosa {
+           background-color: pink !important;
+       }
+
+       &.cinza {
+        background-color:  grey !important;
+       }
+
+       &.vermelho {
+        background-color: red !important;
+       }
+
+       &.deep.purple {
+        background-color: #673AB7 !important;
+       } 
+
+       &.indigo {
+           background-color: #3F51B5 !important;
+       }
+
+       &.teal {
+           background-color: #009688 !important
+       }
+
+       &.bordo {
+           background-color: #800000 !important
+       }
+
+       &.castanho {
+           background-color:  #d2b48c !important;
+     
+        }
+
+        &.madeira {
+            background-color: #deb887 !important;
+        }
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,26 @@
+<ion-header>
+	<ion-navbar>
+		<button ion-button menuToggle clear color="dark">
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>
+			Introdução
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+		<ion-row>
+			<ion-col col-12 col-sm-6 col-md-4 *ngFor="let genero of generos">
+				<ion-card >
+					<ion-card-header [ngClass]="genero.cor ? genero.cor : ' '">
+						<!-- <div class="genero-container"> -->
+							<div class="genero" > 
+								<div >{{genero.name}} </div>
+							</div>
+						<!-- </div> -->
+					</ion-card-header>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+</ion-content> 

@@ -1,0 +1,29 @@
+<ion-split-pane>
+	<!--  our side menu  -->
+	<ion-menu [content]="content" type="overlay"  menuClose>
+		<ion-header>
+			<ion-toolbar>
+				<ion-title>Menu</ion-title>
+			</ion-toolbar>
+		</ion-header>
+
+
+
+		<ion-content>
+			<ion-list>
+				<button ion-item (click)="abrirIntro()">
+					<ion-icon name="casa" margin-right color="primary"></ion-icon>Introdução
+				</button>
+				<button ion-item (click)="abrirFilmes()" margin-right>
+						<ion-icon name="filme" margin-right></ion-icon>	Filmes
+				</button>
+				<button ion-item (click)="abrirTV()" margin-right>
+						<ion-icon name="tv" margin-right></ion-icon> Programas de TV
+				</button>
+			</ion-list>
+		</ion-content>
+	</ion-menu>
+
+	<!-- the main content -->
+	<ion-nav [root]="root" main #content></ion-nav>
+</ion-split-pane>

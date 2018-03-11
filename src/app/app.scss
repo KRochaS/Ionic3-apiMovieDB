@@ -1,0 +1,96 @@
+
+ion-app {
+    ion-nav ion-content {
+        background-color: #D3D3D3 !important;
+    }
+
+    
+}
+
+$custom-icons: (
+
+    pessoas:        url(../assets/img/icons/pessoas.svg),
+    orcamento:      url(../assets/img/icons/orcamento.svg),
+    // ramos
+    pessoa:         url(../assets/img/icons/person.svg),
+    casa:           url(../assets/img/icons/casa.svg),    
+    carro:          url(../assets/img/icons/carro.svg),    
+    
+    documento:      url(../assets/img/icons/documento.svg),    
+    olho:           url(../assets/img/icons/olho.svg), 
+
+
+    filtro:         url(../assets/img/icons/filtro.svg),    
+
+    // 
+    calendario:     url(../assets/img/icons/calendario.svg),
+    
+    // tabs 
+    lampada:        url(../assets/img/icons/lamp.svg),
+    conversa:       url(../assets/img/icons/talk.svg),
+    marcado:        url(../assets/img/icons/checked.svg),
+
+    // origem
+    origem:         url(../assets/img/icons/origem.svg),
+    cross_selling:  url(../assets/img/icons/cross_selling.svg),
+    perdido:        url(../assets/img/icons/perdido.svg),
+    renovacao:      url(../assets/img/icons/renovacao.svg),
+    leads:          url(../assets/img/icons/leads.svg),
+
+    
+    lixeira:        url(../assets/img/icons/lixeira.svg),
+    calculadora:    url(../assets/img/icons/calculadora.svg),
+    lapis:          url(../assets/img/icons/lapis.svg),
+    fone:           url(../assets/img/icons/fone.svg),
+    despertador:    url(../assets/img/icons/despertador.svg),
+    dollar:         url(../assets/img/icons/dollar.svg),
+    overflow:       url(../assets/img/icons/overflow.svg),
+
+
+    circulo:        url(../assets/img/icons/circulo.svg),
+
+    corretora:       url(../assets/img/icons/corretora.svg),
+    usuarios:        url(../assets/img/icons/usuarios.svg),
+    seguradora:      url(../assets/img/icons/seguradora.svg),
+    coberturas:      url(../assets/img/icons/coberturas.svg),
+
+    filme:          url(../assets/img/icons/filme.svg),
+    config:         url(../assets/img/icons/config.svg),
+    tv:             url(../assets/img/icons/tv.svg),
+    checkado:       url(../assets/img/icons/checkado.svg),
+    checkgreen:     url(../assets/img/icons/checkgreen.svg)
+);
+
+
+// define as imagens dos ícones
+@each $icon-name, $icon-url in $custom-icons {
+    ion-icon[ng-reflect-name*="#{$icon-name}"] {        
+            // Instead of using the font-based icons
+            // We're applying SVG masks
+            mask-size: contain;
+            mask-position: 50% 50%;
+            mask-repeat: no-repeat;
+            background: currentColor;
+            width: 1em;
+            height: 1em;
+            mask-image: #{$icon-url};                
+    }    
+}
+
+
+.card-md .item-md.item-block:not(:last-child) .item-inner {
+    border-bottom: 1px solid #dedede !important;
+}
+
+.card-md .item-md.item-block:not(.item-input):not(.item-select):not(.item-radio):not(.item-checkbox) .item-inner {
+    border: 0;
+}
+
+// 
+.card-md  span:not(:last-child) .item-md.item-block .item-inner {
+    border-bottom: 1px solid #dedede !important;
+}
+
+.card-md span .item-md.item-block:not(.item-input):not(.item-select):not(.item-radio):not(.item-checkbox) .item-inner {
+    border: 0;
+}
